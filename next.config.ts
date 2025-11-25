@@ -1,20 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export", // 👈 NECESARIO PARA GITHUB PAGES
-  distDir: "docs", // 👈 PARA QUE LA CARPETA DE SALIDA SEA "docs"
+  output: "export",  // necesario para GitHub Pages
+  basePath: "/mi-tienda-next",    // MUY IMPORTANTE
+  assetPrefix: "/mi-tienda-next/", // MUY IMPORTANTE
   images: {
-    unoptimized: true, // 👈 NECESARIO PARA EXPORT
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images-na.ssl-images-amazon.com",
-      },
-      {
-        protocol: "https",
-        hostname: "m.media-amazon.com",
-      },
-    ],
+    unoptimized: true,
   },
 };
 
