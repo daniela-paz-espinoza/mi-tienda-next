@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export", // 👈 NECESARIO PARA GITHUB PAGES
+  distDir: "docs", // 👈 PARA QUE LA CARPETA DE SALIDA SEA "docs"
   images: {
     unoptimized: true, // 👈 NECESARIO PARA EXPORT
     remotePatterns: [
@@ -18,4 +19,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-
